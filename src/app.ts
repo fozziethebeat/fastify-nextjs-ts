@@ -17,6 +17,7 @@ const app: FastifyPluginAsync<AppOptions> = async (
   // Place here your custom code!
   fastify.register(FastifyNext).after(() => {
     fastify.next("/hello");
+    fastify.next("/admin/hello");
   });
 
   // Do not touch the following lines
